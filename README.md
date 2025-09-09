@@ -1,4 +1,4 @@
-# MindGlow Therapy — ICT726 Assignment 3 Website
+# MindGlow Therapy — ICT726 Group Assignment dynamic Website
 
 This is a static, from-scratch website built with **HTML5**, **CSS3**, and a little **JavaScript** — no frameworks or templates.
 
