@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Video thumbnail">
+  <rect width="400" height="250" fill="#EEF1FF"/>
+  <rect x="40" y="40" width="320" height="170" rx="10" fill="#BAC8FF"/>
+  <polygon points="170,90 250,125 170,160" fill="white"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" role="img" aria-label="Online counseling illustration">
+  <rect width="500" height="300" fill="#F0F7FF"/>
+  <rect x="140" y="50" width="220" height="140" rx="12" fill="#D9E8FF" stroke="#7AA2FF"/>
+  <circle cx="250" cy="120" r="28" fill="#7AA2FF"/>
+  <rect x="170" y="210" width="160" height="12" rx="6" fill="#7AA2FF" opacity="0.6"/>
+</svg>

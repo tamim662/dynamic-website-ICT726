@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MindGlow Therapy — Resources (Media Gallery)</title>
+  <meta name="description" content="Self-help articles, videos, and podcast clips."/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container main-nav" role="navigation" aria-label="Primary">
+    <a class="logo" href="index.html">
+      <span class="logo-badge" aria-hidden="true"></span>
+      <span>MindGlow Therapy</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Services</a></li>
+        <li role="none"><a role="menuitem" href="resources.html">Resources</a></li>
+        <li role="none"><a role="menuitem" href="testimonials.html">Testimonials</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main id="main" class="container section">
+    <h1>Resources</h1>
+    <p>Explore articles, videos, and podcasts. Click any card to view larger.</p>
+
+    <div class="filters" role="toolbar" aria-label="Filter resources">
+      <button class="filter-btn" data-filter="articles" aria-pressed="false">Articles</button>
+      <button class="filter-btn" data-filter="videos" aria-pressed="false">Videos</button>
+      <button class="filter-btn" data-filter="podcasts" aria-pressed="false">Podcasts</button>
+    </div>
+
+    <section class="gallery" aria-label="Media gallery">
+      <figure class="thumb" data-category="articles" data-large="assets/images/resource-article.svg">
+        <img src="assets/images/resource-article.svg" alt="Article: Quick breathing reset"/>
+        <figcaption>Quick breathing reset</figcaption>
+      </figure>
+      <figure class="thumb" data-category="videos" data-large="assets/images/resource-video.svg">
+        <img src="assets/images/resource-video.svg" alt="Video: Grounding with senses"/>
+        <figcaption>Grounding with senses</figcaption>
+      </figure>
+      <figure class="thumb" data-category="podcasts" data-large="assets/images/testimonial.svg">
+        <img src="assets/images/testimonial.svg" alt="Podcast: Small wins and progress"/>
+        <figcaption>Small wins and progress</figcaption>
+      </figure>
+      <figure class="thumb" data-category="articles" data-large="assets/images/resource-article.svg">
+        <img src="assets/images/resource-article.svg" alt="Article: Writing worries down"/>
+        <figcaption>Write your worries</figcaption>
+      </figure>
+      <figure class="thumb" data-category="videos" data-large="assets/images/resource-video.svg">
+        <img src="assets/images/resource-video.svg" alt="Video: Sleep wind-down"/>
+        <figcaption>Sleep wind-down</figcaption>
+      </figure>
+      <figure class="thumb" data-category="podcasts" data-large="assets/images/testimonial.svg">
+        <img src="assets/images/testimonial.svg" alt="Podcast: Naming emotions"/>
+        <figcaption>Naming emotions</figcaption>
+      </figure>
+    </section>
+
+    <!-- Modal Viewer -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__dialog">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modal-title">Preview</h2>
+          <button class="modal__close" aria-label="Close preview">&times;</button>
+        </div>
+        <div class="modal__body">
+          <img class="modal__img" src="" alt="Expanded media preview"/>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <h4>About MindGlow</h4>
+      <p>Supportive, practical therapy to help you build calm, confidence, and clarity.</p>
+      <audio controls src="assets/images/tone.wav" aria-label="Gentle tone sample"></audio>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@mindglow.example" aria-label="Email MindGlow">hello@mindglow.example</a></li>
+        <li><a href="#" aria-label="MindGlow on Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="MindGlow on Facebook">Facebook</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Book a Session</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">© 2025 MindGlow Therapy. For assessment demo only.</div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
