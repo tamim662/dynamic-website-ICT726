@@ -1,12 +1,12 @@
 <?php
 // config.php — database and site config
-$DB_HOST = getenv('DB_HOST') ?: 'localhost';
-$DB_NAME = getenv('DB_NAME') ?: 'mindglow_db';
-$DB_USER = getenv('DB_USER') ?: 'root';
-$DB_PASS = getenv('DB_PASS') ?: '';
+$DB_HOST = 'localhost';
+$DB_NAME = 'mindglow_db';
+$DB_USER = 'mindglow_user';
+$DB_PASS = 'StrongPassword123!';
 
 $SITE_NAME = 'MindGlow Therapy';
-$BASE_URL = ''; // e.g., '/mindglow' if deployed in a subfolder
+$BASE_URL = ''; 
 
 $pdo = null;
 try {
