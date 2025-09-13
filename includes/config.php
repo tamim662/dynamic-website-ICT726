@@ -3,7 +3,7 @@
 $DB_HOST = 'localhost';
 $DB_NAME = 'mindglow_db';
 $DB_USER = 'mindglow_user';
-$DB_PASS = 'StrongPassword123!';
+$DB_PASS = 'password';
 
 $SITE_NAME = 'MindGlow Therapy';
 $BASE_URL = ''; 

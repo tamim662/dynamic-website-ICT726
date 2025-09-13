@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Testimonial card">
+  <rect width="400" height="250" rx="16" fill="#F8F9FA" stroke="#CED4DA"/>
+  <text x="200" y="90" text-anchor="middle" font-size="20" font-family="Verdana" fill="#495057">"Feeling better already"</text>
+  <text x="200" y="140" text-anchor="middle" font-size="14" font-family="Verdana" fill="#868E96">— A grateful client</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Article thumbnail">
+  <rect width="400" height="250" fill="#EAF7F2"/>
+  <rect x="60" y="40" width="280" height="20" rx="4" fill="#2F9E44"/>
+  <rect x="60" y="80" width="240" height="14" rx="3" fill="#69DB7C"/>
+  <rect x="60" y="104" width="220" height="14" rx="3" fill="#69DB7C"/>
+  <rect x="60" y="128" width="260" height="14" rx="3" fill="#69DB7C"/>
+</svg>
