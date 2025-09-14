@@ -1,27 +1,63 @@
+# MindGlow – Dynamic Web Application
 
-# MindGlow Therapy — Dynamic Website (PHP + MySQL)
+## 🌱 About MindGlow
+MindGlow is a dynamic PHP–MySQL web application designed to provide therapy resources, self-help tools, and a supportive environment for users.  
 
-This package converts the provided static site into a dynamic web app with authentication, role-based admin, CRUD for resources, testimonial submission with moderation, validated contact form, privacy notice, accessibility hooks, and basic SEO files.
+The project began as a **static website** and has been transformed into a **full-stack web application** with user authentication, database integration, and admin moderation. Its primary aim is to demonstrate how accessible, standards-compliant, and secure web applications can be built with open-source technologies.
 
-## Quick start
+---
 
-1. Create a MySQL database (default name `mindglow_db`) and import `data/schema.sql`.
-2. Ensure PHP 8.1+ with PDO MySQL. Update credentials in `includes/config.php` if needed (`DB_*` env vars or file).
-3. Copy this folder to your PHP server (XAMPP/MAMP/LAMP or hosting).
-4. Visit `/auth/login.php` and sign in with:
-   - Email: `admin@mindglow.example`
-   - Password: `admin123` (please change in DB for production)
-5. Admin dashboard: `/admin/index.php` to manage resources and approve testimonials.
+## ✨ Key Features
 
-## Features mapped to ICT726 A4
-- User auth & roles (admin/member), secure password hashing, sessions, CSRF.
-- Database schema with proper types and relationships.
-- CRUD: resources (admin), testimonials (submit + approve), contacts (logs).
-- Web standards & accessibility: semantic HTML, ARIA roles preserved, skip links.
-- Validation & error handling server-side + client-side hints.
-- SEO: semantic headings, meta description, canonical, robots.txt, sitemap.xml.
-- Privacy & security: privacy notice, input validation, prepared statements, role-based access.
+### 🔑 User Authentication
+- Register, log in, and log out securely.
+- Role-based access control: **admin** vs. **member**.
+- Passwords stored securely using PHP’s `password_hash()`.
 
-## Notes
-- Assets/images are placeholders; reuse your originals by copying into `assets/images/`.
-- Feel free to integrate additional pages; templates in `partials/` keep markup consistent.
+### 🗄️ Database Integration
+- Built on **MySQL** with four main tables:
+  - `users`, `resources`, `testimonials`, `contacts`
+- Full **CRUD operations** for resources and testimonials.
+- Form submissions saved directly to the database with server-side validation.
+
+### 🎨 Dynamic Web Design
+- Responsive frontend using **HTML5, CSS3, and JavaScript**.
+- Reusable design from the original static frontend.
+- Interactive UI: resource filtering, modal previews, live form messages.
+
+### ♿ Web Standards & Accessibility
+- Semantic HTML structure with `<header>`, `<main>`, `<footer>`.
+- ARIA roles (`role="dialog"`, `aria-modal`, skip links, status regions).
+- Optimized SVG images and audio files for performance.
+
+### 🌐 SEO Optimization
+- Semantic heading structure (H1/H2).
+- Meta titles and descriptions per page.
+- Sitemap and robots.txt included.
+- Keyword-focused content for therapy and wellness topics.
+
+### 🔒 Privacy & Security
+- Secure session management with CSRF tokens.
+- Input validation on both client and server side.
+- Admin moderation for user-submitted testimonials.
+- Privacy notice included on contact form to ensure transparency.
+
+---
+
+## 📸 Example Pages
+- **Home** – introduction & resources highlights.
+- **Services** – overview of counseling services.
+- **Resources** – gallery of articles, videos, podcasts with modal previews.
+- **Testimonials** – submit and view approved stories.
+- **Contact** – secure form with privacy notice.
+- **Admin Dashboard** – manage resources & approve testimonials.
+
+---
+
+## 🚀 Getting Started
+1. Clone or unzip the project.
+2. Import `data/schema.sql` into MySQL.
+3. Update `includes/config.php` with your DB credentials.
+4. Run with PHP built-in server:
+   ```bash
+   php -S 127.0.0.1:8080 -t mindglow-dynamic
