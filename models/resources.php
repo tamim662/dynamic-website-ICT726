@@ -16,3 +16,4 @@ function resources_delete($id) {
   $stmt = $pdo->prepare("DELETE FROM resources WHERE id=?");
   return $stmt->execute([$id]);
 }
+?>
