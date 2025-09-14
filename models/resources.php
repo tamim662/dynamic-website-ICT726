@@ -1,28 +1,19 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-function testimonials_public() {
+function resources_all() {
   global $pdo;
-  return $pdo->query("SELECT * FROM testimonials WHERE approved=1 ORDER BY created_at DESC")->fetchAll();
+  return $pdo->query("SELECT * FROM resources ORDER BY created_at DESC")->fetchAll();
 }
-function testimonial_submit($name,$rating,$message) {
+function resources_create($type,$title,$description,$media_url) {
   global $pdo;
-  $stmt = $pdo->prepare("INSERT INTO testimonials (user_name, rating, message, approved) VALUES (?,?,?,0)");
-  $stmt->execute([$name ?: null, $rating, $message]);
+  $stmt = $pdo->prepare("INSERT INTO resources (type,title,description,media_url) VALUES (?,?,?,?)");
+  $stmt->execute([$type,$title,$description,$media_url]);
   return $pdo->lastInsertId();
 }
-function testimonials_all() {
+function resources_delete($id) {
   global $pdo;
-  return $pdo->query("SELECT * FROM testimonials ORDER BY created_at DESC")->fetchAll();
-}
-function testimonial_set_approved($id,$approved) {
-  global $pdo;
-  $stmt = $pdo->prepare("UPDATE testimonials SET approved=? WHERE id=?");
-  return $stmt->execute([(int)$approved, $id]);
-}
-function testimonial_delete($id) {
-  global $pdo;
-  $stmt = $pdo->prepare("DELETE FROM testimonials WHERE id=?");
+  $stmt = $pdo->prepare("DELETE FROM resources WHERE id=?");
   return $stmt->execute([$id]);
 }
 ?>
